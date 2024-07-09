@@ -2,7 +2,7 @@
 
 // Print all entries, across all of the sources, in chronological order.
 
-const syncSortedMerge = (logSources, printer) => {
+module.exports = (logSources, printer) => {
   const logs = [];
 
   logSources.forEach((source) => {
@@ -21,7 +21,5 @@ const syncSortedMerge = (logSources, printer) => {
   logs.forEach((log) => printer.print(log));
   printer.done();
 
-  return console.log("Sync sort complete?");
+  return console.log("Sync sort complete");
 }
-
-module.exports = syncSortedMerge;
