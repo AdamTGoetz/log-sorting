@@ -25,5 +25,5 @@ module.exports = async (logSources, printer) => {
   })
 
   printer.done();
-  return console.log("Async sort complete");
+  return console.log("Async sort complete - list");
 };
